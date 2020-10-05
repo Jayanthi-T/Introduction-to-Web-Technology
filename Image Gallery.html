@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+1817119-IWT Assignment 2
+</title>
+<script src=
+"https://code.jquery.com/jquery-1.12.4.min.js">
+</script>
+</head>
+<body style="text-align:center;background:black ">
+<script type="text/javascript">
+function displayQuote() {
+document.getElementById("sen1").innerHTML = "Government College of
+Technology";
+document.getElementById("sen2").innerHTML = "Coimbatore";
+}
+</script>
+<h1 style = "color:#00ffd5;text-shadow: 2px 2px blue;" >
+Javascript
+</h1>
+<div class="box">
+<div> <img style="border-radius:15px 15px 15px 15px;box-shadow: 5px 5px 5px yellow; " src=
+"https://silly-davinci-2c798a.netlify.app/gct.jpeg"
+id="geeks" GFG="250" height="350px" width="350px"
+alt="Geeksforgeeks" onmouseover="displayQuote()">
+<h3 style="top:100px;margin-left: 520px;color:white;text-shadow: 2px
+2px green;
+margin-right: auto;position:absolute" id="sen1"></h3>
+<h3 style="top:130px;margin-left: 630px;color:white;text-shadow:2px
+2px green;
+margin-right: auto;position:absolute" id="sen2"></h3>
+</div>
+</div>
+<button align="center" type="button" style=" background-color: green;
+/* Green */
+border: none;
+color: white;
+padding: 20px;
+text-align: center;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+box-shadow: 5px 5px 5px #00ffd5;border-radius: 12px;" onclick="zoomin()">
+ZOOM-IN
+</button>
+<script type="text/javascript">
+function zoomin() {
+var GFG = document.getElementById("geeks");
+var currWidth = GFG.clientWidth;
+var currHeight = GFG.clientHeight;
+GFG.style.width = (currWidth + 500) + "px";
+GFG.style.height = (currHeight + 500) + "px";
+}
+</script>
+</body>
+</html>
